@@ -1,0 +1,1 @@
+Icon by [Eucalyp](https://www.flaticon.com/authors/eucalyp) on [flaticons](https://www.flaticon.com/)

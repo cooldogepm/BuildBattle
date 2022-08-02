@@ -1,0 +1,47 @@
+---
+# Configuration version, don't edit this.
+config-version: 0.0.1
+
+language: en-US
+
+# The pool is used for handling asynchronous operations such as game creation/deletion and plot floor changes.
+pool:
+  workers-limit: 2
+  memory-limit: 256
+
+database:
+  # The database provider, mysql or sqlite.
+  provider: sqlite
+  # Number of threads to use for the database query processing, 2 is recommended.
+  threads: 2
+
+  # The database connection information.
+  mysql:
+    host: 127.0.0.1
+    username: your_username
+    password: password
+    schema: db_name
+    port: 3306
+
+  # The database file name.
+  sqlite:
+    file: players.db
+
+behaviour:
+  queue-on-login: false
+  queue-on-game-end: false
+
+themes:
+  - Doge
+  - Shipwreck
+  - Pirates
+  - Theatre
+  - Island
+  - Desert
+  - Mountains
+  - Forest
+  - Spacecraft
+  - Alien
+  - Vampire
+  - Witch
+...

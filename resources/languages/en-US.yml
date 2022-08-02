@@ -1,0 +1,135 @@
+---
+# Configuration version, don't edit this, this is a special token.
+### config-version: 0.0.1 ###
+
+# The messages that are displayed when a player joins/leaves a game.
+player:
+  join: "&7{player} &ehas joined! &e(&b{players_count}/{players_max}&e)"
+  quit: "&7{player} &ehas quit! &e(&b{players_count}/{players_max}&e)"
+
+# The messages that are displayed to players when the game ends.
+end:
+  message: "&eGame results:"
+  first: "&l&a1. &r&e{player} &7with &e{score} &7points"
+  second: "&l&62. &r&e{player} &7with &e{score} &7points"
+  third: "&l&c3. &r&e{player} &7with &e{score} &7points"
+  you: "&7You (#&e{position}&7) scored &e{score} &7points"
+
+# The messages that are displayed to players in countdown phase.
+countdown:
+  start: "&eCountdown has started!"
+  stop: "&eCountdown has stopped!"
+  decrement: "&eThe game starts in &c{countdown} &esecond(s)!"
+
+# The messages that are displayed to players when the game starts.
+start:
+  title: "&eTheme: &l&b{theme}"
+  subtitle: "&eBuild something relevant to the theme!"
+  message: "&c&lInappropriate builds are not allowed and will result in a punishment!"
+
+# The messages that are displayed to players when they fail to queue.
+queue-error:
+  message: "&cThere are no available games at the moment, retry later."
+  kick: "&cThere are no available games at the moment, retry later."
+
+# The command's information.
+command:
+  name: "buildbattle"
+  aliases: [ "bb" ]
+  description: "BuildBattle"
+
+# The custom item names for the end and pre-start phased.
+items:
+  quit-game: "&r&cQuit Game"
+  plot-floor: "&r&l&ePlot Floor"
+  plot-floor-inventory: "Plot Floor"
+
+vote-preparation:
+  title: "&aVoting"
+  subtitle: "&ePrepare to start voting!"
+  message: ""
+
+# The messages that are displayed to players when they enter a plot.
+plot-enter:
+  title: "&r"
+  subtitle: "&7Builder: {builder}"
+  message: "&eBuilder: &7{builder}"
+
+# The messages that are displayed to players during the voting phase of a plot.
+voting:
+  none: "&cNo Vote"
+  confirm: "&eConfirmed vote: {vote}"
+  already-confirmed: "&cYou've already voted {vote}"
+  tip: "&c{time_left} &esecond(s) left to vote for this plot"
+
+# The custom item names for the vote items.
+vote-items:
+  super-poop: "&r&l&4SUPER POOP"
+  poop: "&r&l&cPOOP"
+  ok: "&r&l&2OK"
+  good: "&r&l&aGOOD"
+  epic: "&r&l&5EPIC"
+  legendary: "&r&l&6LEGENDARY"
+
+# The formats of the messages that are displayed to players.
+chat:
+  match: "&7{player}: &f{message}"
+  end: "&7[{score}] {player}: {message}"
+
+# The scoreboard messages.
+scoreboard:
+  title: "&l&eBB"
+  body:
+    idle:
+      - ""
+      - "Map: &a{map}"
+      - ""
+      - "Players: &a{players_count}"
+      - ""
+      - "Waiting..."
+      - ""
+      - "&ewww.fadhel.dev"
+    countdown:
+      - ""
+      - "Map: &a{map}"
+      - ""
+      - "Players: &a{players_count}"
+      - ""
+      - "Starting in &a{countdown}s"
+      - ""
+      - "&ewww.fadhel.dev"
+    match:
+      - ""
+      - "Time: &a{time_left}"
+      - ""
+      - "Theme:"
+      - "&a{theme}"
+      - ""
+      - "Players: &a{players_count}"
+      - ""
+      - "&ewww.fadhel.dev"
+    vote:
+      - ""
+      - "Builder:"
+      - "&a{builder}"
+      - ""
+      - "Theme:"
+      - "&a{theme}"
+      - ""
+      - "Vote:"
+      - "{vote}"
+      - ""
+      - "&ewww.fadhel.dev"
+    end:
+      - ""
+      - "Winner:"
+      - "&a{winner}"
+      - ""
+      - "Theme:"
+      - "&a{theme}"
+      - ""
+      - "Score:"
+      - "{score}"
+      - ""
+      - "&ewww.fadhel.dev"
+...
