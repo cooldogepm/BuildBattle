@@ -34,4 +34,4 @@
 
 #### Example
 
-`buildbattle create name game-lobby game-world 30 6 24 300 10 5 30`
+`buildbattle create name game-lobby game-world 30 6 24 300 30 10 10 10`
