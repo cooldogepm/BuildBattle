@@ -10,7 +10,7 @@ projects:
       - src: cooldogedev/libSQL/libSQL
         version: ^0.1.1
       - src: muqsit/InvMenu/InvMenu
-        branch: 4.0
+        branch: "4.0"
         version: ^4.4.1
       - src: CortexPE/Commando/Commando
         branch: PM4
