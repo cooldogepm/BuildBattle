@@ -195,7 +195,7 @@ final class GameManager
 
     public function removeGame(int $id): bool
     {
-        if ($this->isGameExists($id)) {
+        if (!$this->isGameExists($id)) {
             return false;
         }
         unset($this->games[$id]);
