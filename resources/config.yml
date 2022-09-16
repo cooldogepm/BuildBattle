@@ -2,6 +2,7 @@
 # Configuration version, don't edit this.
 config-version: 0.0.1
 
+# Available languages: en-US (English), vi-VN (Vietnamese)
 language: en-US
 
 # The pool is used for handling asynchronous operations such as game creation/deletion and plot floor changes.
