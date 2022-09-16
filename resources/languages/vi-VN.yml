@@ -1,0 +1,135 @@
+---
+# Configuration version, don't edit this, this is a special token.
+### config-version: 0.0.1 ###
+
+# The messages that are displayed when a player joins/leaves a game.
+player:
+  join: "&7{player} &eđã tham gia! &e(&b{players_count}/{players_max}&e)"
+  quit: "&7{player} &eđã rời! &e(&b{players_count}/{players_max}&e)"
+
+# The messages that are displayed to players when the game ends.
+end:
+  message: "&eKết quả trò chơi:"
+  first: "&l&a1. &r&e{player} &7với &e{score} &7điểm"
+  second: "&l&62. &r&e{player} &7với &e{score} &7điểm"
+  third: "&l&c3. &r&e{player} &7với &e{score} &7điểm"
+  you: "&7Bạn (#&e{position}&7) nhận được &e{score} &7điểm"
+
+# The messages that are displayed to players in countdown phase.
+countdown:
+  start: "&eĐếm ngược đã bắt đầu!"
+  stop: "&eĐếm ngược đã dừng lại!"
+  decrement: "&eThe game starts in &c{countdown} &esecond(s)!"
+
+# The messages that are displayed to players when the game starts.
+start:
+  title: "&eChủ đề: &l&b{theme}"
+  subtitle: "&eXây dựng một cái gì đó có liên quan đến chủ đề!"
+  message: "&c&lKhông được phép xây dựng không phù hợp và sẽ dẫn đến hình phạt!"
+
+# The messages that are displayed to players when they fail to queue.
+queue-error:
+  message: "&cKhông có trò chơi nào vào lúc này, hãy thử lại sau."
+  kick: "&cKhông có trò chơi nào vào lúc này, hãy thử lại sau."
+
+# The command's information.
+command:
+  name: "buildbattle"
+  aliases: [ "bb" ]
+  description: "BuildBattle"
+
+# The custom item names for the end and pre-start phased.
+items:
+  quit-game: "&r&cThoát khỏi trò chơi"
+  plot-floor: "&r&l&eSàn Công Trình"
+  plot-floor-inventory: "Sàn Công Trình"
+
+vote-preparation:
+  title: "&aBỏ phiếu"
+  subtitle: "&eChuẩn bị để bắt đầu bỏ phiếu!"
+  message: ""
+
+# The messages that are displayed to players when they enter a plot.
+plot-enter:
+  title: "&r"
+  subtitle: "&7Người xây dựng: {builder}"
+  message: "&eNgười xây dựng: &7{builder}"
+
+# The messages that are displayed to players during the voting phase of a plot.
+voting:
+  none: "&cKhông bỏ phiếu"
+  confirm: "&eĐã xác nhận phiếu bầu: {vote}"
+  already-confirmed: "&cBạn đã bình chọn {vote}"
+  tip: "&c{time_left} &egiây(s) còn lại để bỏ phiếu cho công trình này"
+
+# The custom item names for the vote items.
+vote-items:
+  super-poop: "&r&l&4SIÊU XẤU"
+  poop: "&r&l&cXẤU"
+  ok: "&r&l&2ỔN"
+  good: "&r&l&aTỐT"
+  epic: "&r&l&5TUYỆT VỜI"
+  legendary: "&r&l&6HUYỀN THOẠI"
+
+# The formats of the messages that are displayed to players.
+chat:
+  match: "&7{player}: &f{message}"
+  end: "&7[{score}] {player}: {message}"
+
+# The scoreboard messages.
+scoreboard:
+  title: "&l&eBB"
+  body:
+    idle:
+      - ""
+      - "Bản đồ: &a{map}"
+      - ""
+      - "Người chơi: &a{players_count}"
+      - ""
+      - "Đang đợi người chơi..."
+      - ""
+      - "&ewww.fadhel.dev"
+    countdown:
+      - ""
+      - "Bản đồ: &a{map}"
+      - ""
+      - "Người chơi: &a{players_count}"
+      - ""
+      - "Bắt đầu sau &a{countdown}s"
+      - ""
+      - "&ewww.fadhel.dev"
+    match:
+      - ""
+      - "Thời gian: &a{time_left}"
+      - ""
+      - "Chủ đề:"
+      - "&a{theme}"
+      - ""
+      - "Người chơi: &a{players_count}"
+      - ""
+      - "&ewww.fadhel.dev"
+    vote:
+      - ""
+      - "Người xây dựng:"
+      - "&a{builder}"
+      - ""
+      - "Chủ đề:"
+      - "&a{theme}"
+      - ""
+      - "Bỏ phiếu:"
+      - "{vote}"
+      - ""
+      - "&ewww.fadhel.dev"
+    end:
+      - ""
+      - "Người chiến thắng:"
+      - "&a{winner}"
+      - ""
+      - "Chủ đề:"
+      - "&a{theme}"
+      - ""
+      - "Điểm:"
+      - "{score}"
+      - ""
+      - "&ewww.fadhel.dev"
+...
