@@ -1,5 +1,5 @@
 name: BuildBattle
-version: 0.0.2
+version: 0.0.3
 api: 4.0.0
 author: cooldogedev
 main: cooldogedev\BuildBattle\BuildBattle

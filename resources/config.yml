@@ -1,6 +1,6 @@
 ---
 # Configuration version, don't edit this.
-config-version: 0.0.1
+config-version: 0.0.3
 
 # Available languages: en-US (English), vi-VN (Vietnamese)
 language: en-US

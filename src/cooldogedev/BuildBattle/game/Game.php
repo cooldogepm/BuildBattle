@@ -236,8 +236,8 @@ final class Game
             return;
         }
 
-        $this->getHandler()?->handleTicking();
         $this->getHandler()?->handleScoreboardUpdates();
+        $this->getHandler()?->handleTicking();
     }
 
     public function calculateResults(): void

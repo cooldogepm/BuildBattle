@@ -1,6 +1,6 @@
 ---
 # Configuration version, don't edit this, this is a special token.
-### config-version: 0.0.1 ###
+### config-version: 0.0.3 ###
 
 # The messages that are displayed when a player joins/leaves a game.
 player:
