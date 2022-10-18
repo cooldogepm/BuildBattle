@@ -46,7 +46,7 @@ final class LanguageManager
     protected static string $language;
     protected static array $translations;
 
-    public static function init(BuildBattle $plugin, ?string $language)
+    public static function init(BuildBattle $plugin, ?string $language): void
     {
         $languagesFolder = $plugin->getDataFolder() . "languages";
         @mkdir($languagesFolder);
